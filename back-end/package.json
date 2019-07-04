@@ -4,7 +4,9 @@
   "description": "Books/Movies Management",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "v6.11.1"
@@ -22,6 +24,8 @@
     "multer": "^1.2.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "request": "^2.74.0"
-  }
+    "request": "^2.74.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
